@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import {PersonFill} from '@gravity-ui/icons';
 
 
 const Navbar = () => {
     return (
-        <div className='bg-base-100 shadow-sm'>
+        <div className='bg-base-100'>
             <div className="navbar container mx-auto px-4 sm:px-6 lg:px-8">
 
                 <div className="navbar-start">
@@ -12,7 +13,9 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbar-end gap-3">
-                    <Image className='bg-gray-100 border border-sky-400 rounded-full' src={'/al-kalam-trf.png'} width={30} height={30} alt="Al kalam Logo" />
+                    <div className='p-1 bg-gray-300 border rounded-full'>
+                        <PersonFill/>
+                    </div>
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>

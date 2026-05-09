@@ -5,7 +5,7 @@ import MarqueeText from 'react-marquee-text';
 
 const HeroSection = () => {
     const [showBalance, setShowBalance] = useState(false);
-    const [balanceValue, setBalanceValue] = useState('0.00');
+    const [balanceValue, setBalanceValue] = useState('50000.00');
 
     const handleTapToView = () => {
         setShowBalance(true);
@@ -21,7 +21,10 @@ const HeroSection = () => {
                 <div className="">
 
                     <div className="py-3 ">
-                        <div className="">
+                        <div className="flex gap-3">
+                            <h2 className="font-semibold text-2xl mb-2">
+                                <span className='text-2xl text-gray-700'>Hey </span> <span className='text-2xl text-teal-600'>MUBARAK ALOMPURY!</span>
+                            </h2>
                             <h2 className="font-semibold text-2xl mb-2">
                                 Your Balance
                             </h2>
